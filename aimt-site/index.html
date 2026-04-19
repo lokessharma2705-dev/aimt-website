@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B2B5A" />
+  <meta name="description" content="Ambalika Institute of Management & Technology (AIMT) — Best Engineering College in Lucknow." />
+  <title>AIMT — Ambalika Institute of Management & Technology</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__card">
+      <div class="loader__mark" aria-hidden="true"></div>
+      <div class="loader__text">
+        <div class="loader__title">AIMT</div>
+        <div class="loader__sub">Loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="AIMT Home">
+        <img class="brand__img" src="assets/logo.png" alt="AIMT Logo" />
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__links" role="list">
+          <li><a class="nav__link" href="#home">HOME</a></li>
+
+          <li class="nav__item nav__item--dd">
+            <button class="nav__link nav__link--dd" type="button" aria-expanded="false" aria-controls="ddAbout">
+              ABOUT <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="mega mega--narrow" id="ddAbout" role="menu" aria-label="About menu">
+              <div class="mega__grid mega__grid--1">
+                <a class="mega__link" href="#about">About AIMT</a>
+                <a class="mega__link" href="#ambalikaGroup">The Ambalika Group</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- ACADEMICS mega menu -->
+          <li class="nav__item nav__item--dd">
+            <button class="nav__link nav__link--dd" type="button" aria-expanded="false" aria-controls="ddAcademics">
+              ACADEMICS <span class="chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="mega" id="ddAcademics" role="menu" aria-label="Academics menu">
+              <div class="mega__grid">
+                <div class="mega__col">
+                  <div class="mega__title">Undergraduate Programmes</div>
+                  <a class="mega__link" href="#academics">B.Tech Computer Science and Engineering</a>
+                  <a class="mega__link" href="#academics">B.Tech Mechanical Engineering</a>
+                  <a class="mega__link" href="#academics">B.Tech Civil Engineering</a>
+                  <a class="mega__link" href="#academics">B.Tech Bio-Technology Engineering</a>
+                  <a class="mega__link" href="#academics">B.Tech Information Technology</a>
+                  <a class="mega__link" href="#academics">B.Tech Data Science (DS)</a>
+                  <a class="mega__link" href="#academics">B.Tech Artificial Intelligence and Machine Learning (AI/ML)</a>
+                  <a class="mega__link" href="#academics">BBA</a>
+                  <a class="mega__link" href="#academics">BCA</a>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Department of Applied Science &amp; Humanities</div>
+                  <div class="mega__muted">Department information available on the official site.</div>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Postgraduate Programmes</div>
+                  <a class="mega__link" href="#academics">MBA</a>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Diploma Programmes</div>
+                  <a class="mega__link" href="#academics">Diploma In Civil Engineering</a>
+                  <a class="mega__link" href="#academics">Diploma In Mechanical Engineering</a>
+                  <a class="mega__link" href="#academics">Diploma In Computer Science &amp; Engineering</a>
+                  <a class="mega__link" href="#academics">Diploma In Electrical Engineering</a>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Academic Calender</div>
+                  <a class="mega__link" href="#academicCalendar">Academic Calendar Even Sem Session 2024-25</a>
+                  <a class="mega__link" href="#academicCalendar">Academic Calendar Odd Sem Session 2025-26</a>
+                  <a class="mega__link" href="#academicCalendar">Academic Calendar Even Sem Session 2025-26</a>
+                  <a class="mega__link" href="#academicCalendar">Academic Calendar Odd Sem Session 2024-25</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ADMISSIONS mega menu -->
+          <li class="nav__item nav__item--dd">
+            <button class="nav__link nav__link--dd" type="button" aria-expanded="false" aria-controls="ddAdmissions">
+              ADMISSIONS <span class="chev" aria-hidden="true"></span>
+            </button>
+
+            <div class="mega mega--3" id="ddAdmissions" role="menu" aria-label="Admissions menu">
+              <div class="mega__grid mega__grid--3">
+                <div class="mega__col">
+                  <div class="mega__title">Admission Registration</div>
+                  <a class="mega__link" href="#admissions">Apply Now</a>
+                  <a class="mega__link" href="#admissions">Why Ambalika?</a>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Tuition &amp; Fees</div>
+                  <a class="mega__link" href="#admissions">Fee Structure</a>
+                  <a class="mega__link" href="#admissions">Online Fee Transfer</a>
+                </div>
+
+                <div class="mega__col">
+                  <div class="mega__title">Financial Aid</div>
+                  <a class="mega__link" href="#admissions">Bihar Student Credit Card Yojana</a>
+                  <a class="mega__link" href="#admissions">State Bank Loan</a>
+                  <a class="mega__link" href="#admissions">HDFC Bank Loan</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- PLACEMENTS dropdown -->
+          <li class="nav__item nav__item--dd">
+            <button class="nav__link nav__link--dd" type="button" aria-expanded="false" aria-controls="ddPlacements">
+              PLACEMENTS <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="mega mega--narrow" id="ddPlacements" role="menu" aria-label="Placements menu">
+              <div class="mega__grid mega__grid--1">
+                <a class="mega__link" href="#placements">Overview</a>
+                <a class="mega__link" href="#placements">Placement News</a>
+                <a class="mega__link" href="#placements">Our Recruiters</a>
+                <a class="mega__link" href="#testimonials">Testimonial Videos</a>
+                <a class="mega__link" href="#placements">Placement Summary</a>
+                <a class="mega__link" href="#placements">Placement Policy</a>
+              </div>
+            </div>
+          </li>
+
+          <li><a class="nav__link" href="#life">LIFE @ AMBALIKA</a></li>
+          <li><a class="nav__link" href="#policies">POLICIES</a></li>
+          <li><a class="nav__link" href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <div class="search">
+            <input id="navCourseSearch" class="search__input" type="search" placeholder="Search programs…" aria-label="Search programs" />
+            <button id="navSearchBtn" class="search__btn" type="button" aria-label="Search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M10.5 19a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M16.8 16.8 22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <button class="btn btn--primary" id="openEnquiryModal" type="button">Enquire Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Announcement strip -->
+    <div class="announce" role="region" aria-label="Announcements">
+      <div class="container announce__inner">
+        <span class="announce__badge">Notice</span>
+        <p class="announce__text">
+          Regional Pioneers: Achieving a historic hat-trick with three consecutive NBA Accreditations in B.Tech CS&amp;E
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__left reveal">
+          <p class="eyebrow">Ambalika Institute of Management &amp; Technology</p>
+          <h1 class="hero__title">Best Engineering College in Lucknow</h1>
+          <p class="hero__subtitle">
+            Modern campus experience with industry-oriented learning and premium infrastructure.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary bb" href="#about">Explore AIMT</a>
+            <a class="btn btn--ghost" href="#academics">View Academics</a>
+          </div>
+
+          <div class="hero__chips">
+            <span class="chip">AICTE Approved</span>
+            <span class="chip">Affiliated to AKTU</span>
+            <span class="chip">Board of Technical Education (BTE)</span>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="hero__card">
+            <h3 class="hero__cardTitle">AIMT at a Glance</h3>
+            <div class="glance">
+              <div class="glance__item">
+                <div class="glance__num"><span data-counter="3000">0</span>+</div>
+                <div class="glance__label">Students</div>
+              </div>
+              <div class="glance__item">
+                <div class="glance__num"><span data-counter="200">0</span></div>
+                <div class="glance__label">Acre Lush Green Campus</div>
+              </div>
+              <div class="glance__item">
+                <div class="glance__num"><span data-counter="190">0</span>+</div>
+                <div class="glance__label">Highly Qualified Faculty Members</div>
+              </div>
+            </div>
+            <button class="btn btn--primary btn--block" id="openEnquiryModal2" type="button">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head reveal section__head--center">
+          <h2 class="section__title">Best Engineering College in Lucknow</h2>
+          <p class="section__kicker">AMBALIKA INSTITUTE OF MANAGEMENT &amp; TECHNOLOGY</p>
+        </div>
+
+        <article class="prose reveal">
+          <p>
+            Welcome to Ambalika Institute of Management and Technology, a premier institution committed to shaping the
+            next generation of leaders, innovators, and problem-solvers in the fields of engineering and management.
+            These qualities make AIMT one of the best engineering colleges in Lucknow. With a strong emphasis on academic
+            excellence, cutting-edge research, and experiential learning, we provide a dynamic environment where
+            students gain the skills and knowledge needed to excel in today’s fast-paced, ever-evolving global
+            industries. Our distinguished faculty, state-of-the-art facilities, and strong industry collaborations
+            ensure that every student receives a well-rounded education, preparing them for success in their careers and
+            beyond. Join us at AIMT—where innovation meets opportunity and ideas turn into impact.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- The Ambalika Group -->
+    <section class="section section--tint" id="ambalikaGroup">
+      <div class="container">
+        <div class="section__head reveal section__head--center">
+          <h2 class="section__title">The Ambalika Group</h2>
+        </div>
+
+        <div class="grid-2">
+          <article class="card reveal card--prose">
+            <p>
+              Ambalika Group of Institutions, one of the best engineering colleges in Lucknow, Uttar Pradesh, was
+              established with the mission of offering high-quality education in the fields of engineering and
+              management. Despite being rich in natural resources, Uttar Pradesh faces challenges in advancing technical
+              and managerial education. This gap has hindered industrial growth and overall economic development in the
+              region. To address this, Ambalika was founded to bridge the gap by expanding access to quality education
+              and fueling future progress.
+            </p>
+            <p>
+              The group is managed by a dedicated trustee who oversees its diverse business ventures, including Ambalika
+              Construction Limited, Ambalika Chit Fund Limited, and Ambalika Farms &amp; Resorts Ltd. These companies are
+              actively engaged in infrastructure development, building construction, machinery rental, transportation
+              and logistics, earthwork, mining, and crushing. Ambalika Construction Limited serves as the flagship
+              company, driving the group’s core operations.
+            </p>
+          </article>
+
+          <aside class="card reveal">
+            <h3 class="card__title">AIMT Highlights</h3>
+            <p class="muted">Key numbers shown on the official site.</p>
+
+            <div class="mini-stats">
+              <div class="mini-stat">
+                <div class="mini-stat__num"><span data-counter="3000">0</span>+</div>
+                <div class="mini-stat__label">Students</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat__num"><span data-counter="200">0</span></div>
+                <div class="mini-stat__label">Acre Lush Green Campus</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat__num"><span data-counter="190">0</span>+</div>
+                <div class="mini-stat__label">Highly Qualified Faculty Members</div>
+              </div>
+            </div>
+
+            <div class="media">
+              <img src="assets/campus.jpg" alt="AIMT campus view" loading="lazy" />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMICS -->
+    <section id="academics" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Academics</h2>
+          <p class="section__subtitle">Search and filter programs as listed on the official menu.</p>
+        </div>
+
+        <div class="toolbar reveal" role="region" aria-label="Program search and filtering">
+          <div class="toolbar__left">
+            <label class="field">
+              <span class="field__label">Search</span>
+              <input id="courseSearch" class="input" type="search" placeholder="e.g., CSE, MBA, Diploma…" />
+            </label>
+            <label class="field">
+              <span class="field__label">Filter</span>
+              <select id="courseFilter" class="input">
+                <option value="all">All</option>
+                <option value="ug">Undergraduate</option>
+                <option value="pg">Postgraduate</option>
+                <option value="diploma">Diploma</option>
+              </select>
+            </label>
+          </div>
+          <div class="toolbar__right">
+            <div class="count" aria-live="polite">
+              Showing <strong id="courseCount">0</strong> programs
+            </div>
+          </div>
+        </div>
+
+        <div class="cards" id="courseGrid">
+          <!-- UG -->
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Computer Science and Engineering">
+            <div class="card__icon" aria-hidden="true">CSE</div>
+            <h3 class="card__title">B.Tech Computer Science and Engineering</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Mechanical Engineering">
+            <div class="card__icon" aria-hidden="true">ME</div>
+            <h3 class="card__title">B.Tech Mechanical Engineering</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Civil Engineering">
+            <div class="card__icon" aria-hidden="true">CE</div>
+            <h3 class="card__title">B.Tech Civil Engineering</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Bio-Technology Engineering">
+            <div class="card__icon" aria-hidden="true">BT</div>
+            <h3 class="card__title">B.Tech Bio-Technology Engineering</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Information Technology">
+            <div class="card__icon" aria-hidden="true">IT</div>
+            <h3 class="card__title">B.Tech Information Technology</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Data Science (DS)">
+            <div class="card__icon" aria-hidden="true">DS</div>
+            <h3 class="card__title">B.Tech Data Science (DS)</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="B.Tech Artificial Intelligence and Machine Learning (AI/ML)">
+            <div class="card__icon" aria-hidden="true">AI</div>
+            <h3 class="card__title">B.Tech Artificial Intelligence and Machine Learning (AI/ML)</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="BBA">
+            <div class="card__icon" aria-hidden="true">BBA</div>
+            <h3 class="card__title">BBA</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+          <article class="card reveal course" data-dept="ug" data-title="BCA">
+            <div class="card__icon" aria-hidden="true">BCA</div>
+            <h3 class="card__title">BCA</h3>
+            <div class="tags"><span class="tag">Undergraduate</span></div>
+          </article>
+
+          <!-- PG -->
+          <article class="card reveal course" data-dept="pg" data-title="MBA">
+            <div class="card__icon" aria-hidden="true">MBA</div>
+            <h3 class="card__title">MBA</h3>
+            <div class="tags"><span class="tag">Postgraduate</span></div>
+          </article>
+
+          <!-- Diploma -->
+          <article class="card reveal course" data-dept="diploma" data-title="Diploma In Civil Engineering">
+            <div class="card__icon" aria-hidden="true">DCE</div>
+            <h3 class="card__title">Diploma In Civil Engineering</h3>
+            <div class="tags"><span class="tag">Diploma</span></div>
+          </article>
+          <article class="card reveal course" data-dept="diploma" data-title="Diploma In Mechanical Engineering">
+            <div class="card__icon" aria-hidden="true">DME</div>
+            <h3 class="card__title">Diploma In Mechanical Engineering</h3>
+            <div class="tags"><span class="tag">Diploma</span></div>
+          </article>
+          <article class="card reveal course" data-dept="diploma" data-title="Diploma In Computer Science & Engineering">
+            <div class="card__icon" aria-hidden="true">DCSE</div>
+            <h3 class="card__title">Diploma In Computer Science &amp; Engineering</h3>
+            <div class="tags"><span class="tag">Diploma</span></div>
+          </article>
+          <article class="card reveal course" data-dept="diploma" data-title="Diploma In Electrical Engineering">
+            <div class="card__icon" aria-hidden="true">DEE</div>
+            <h3 class="card__title">Diploma In Electrical Engineering</h3>
+            <div class="tags"><span class="tag">Diploma</span></div>
+          </article>
+        </div>
+
+        <div class="note reveal" id="noCoursesNote" hidden>
+          No programs match your search. Try removing filters.
+        </div>
+
+        <!-- Academic Calendar -->
+        <section id="academicCalendar" class="calendar reveal" aria-label="Academic calendar">
+          <h3 class="calendar__title">Academic Calender</h3>
+          <div class="calendar__grid">
+            <button class="calendar__item" type="button" data-download="Academic Calendar Even Sem Session 2024-25">
+              Academic Calendar Even Sem Session 2024-25
+              <span class="calendar__meta">Download</span>
+            </button>
+            <button class="calendar__item" type="button" data-download="Academic Calendar Odd Sem Session 2025-26">
+              Academic Calendar Odd Sem Session 2025-26
+              <span class="calendar__meta">Download</span>
+            </button>
+            <button class="calendar__item" type="button" data-download="Academic Calendar Even Sem Session 2025-26">
+              Academic Calendar Even Sem Session 2025-26
+              <span class="calendar__meta">Download</span>
+            </button>
+            <button class="calendar__item" type="button" data-download="Academic Calendar Odd Sem Session 2024-25">
+              Academic Calendar Odd Sem Session 2024-25
+              <span class="calendar__meta">Download</span>
+            </button>
+          </div>
+          <p class="fineprint">Downloads are demo files generated locally (no external dependencies).</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- ADMISSIONS -->
+    <section id="admissions" class="section section--tint">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Admissions</h2>
+          <p class="section__subtitle">Sections shown in the official Admissions menu.</p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal card--stack">
+            <h3 class="card__title">Admission Registration</h3>
+            <div class="linklist">
+              <a href="#admissions" class="linklist__item">Apply Now</a>
+              <a href="#admissions" class="linklist__item">Why Ambalika?</a>
+            </div>
+            <button class="btn btn--primary btn--block" id="openEnquiryModal3" type="button">Enquire Now</button>
+          </article>
+
+          <article class="card reveal card--stack">
+            <h3 class="card__title">Tuition &amp; Fees</h3>
+            <div class="linklist">
+              <a href="#admissions" class="linklist__item">Fee Structure</a>
+              <a href="#admissions" class="linklist__item">Online Fee Transfer</a>
+            </div>
+          </article>
+
+          <article class="card reveal card--stack">
+            <h3 class="card__title">Financial Aid</h3>
+            <div class="linklist">
+              <a href="#admissions" class="linklist__item">Bihar Student Credit Card Yojana</a>
+              <a href="#admissions" class="linklist__item">State Bank Loan</a>
+              <a href="#admissions" class="linklist__item">HDFC Bank Loan</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLACEMENTS -->
+    <section id="placements" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Placements</h2>
+          <p class="section__subtitle">Items shown in the official Placements menu.</p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal"><h3 class="card__title">Overview</h3><p class="card__text">Add official content if you share it.</p></article>
+          <article class="card reveal"><h3 class="card__title">Placement News</h3><p class="card__text">Add official content if you share it.</p></article>
+          <article class="card reveal"><h3 class="card__title">Our Recruiters</h3><p class="card__text">Add official logos/names if you share it.</p></article>
+          <article class="card reveal"><h3 class="card__title">Placement Summary</h3><p class="card__text">Waiting for official stats/screenshots.</p></article>
+          <article class="card reveal"><h3 class="card__title">Placement Policy</h3><p class="card__text">Add official policy content if you share it.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL VIDEOS -->
+    <section id="testimonials" class="section section--tint" aria-label="Testimonial videos">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Testimonial Videos</h2>
+          <p class="section__subtitle">Add official video links if you share the placements page screenshots.</p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal"><h3 class="card__title">Testimonial Video 1</h3><p class="card__text">Placeholder card.</p></article>
+          <article class="card reveal"><h3 class="card__title">Testimonial Video 2</h3><p class="card__text">Placeholder card.</p></article>
+          <article class="card reveal"><h3 class="card__title">Testimonial Video 3</h3><p class="card__text">Placeholder card.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIFE @ AMBALIKA / FACILITIES -->
+    <section id="life" class="section section--tint">
+      <div class="container">
+        <div class="section__head reveal section__head--center">
+          <h2 class="section__title">These Facilities make AIMT the best Engineering College in Lucknow</h2>
+        </div>
+
+        <div class="split reveal">
+          <div class="split__media">
+            <img src="assets/campus.jpg" alt="AIMT campus building" loading="lazy" />
+          </div>
+          <div class="split__content">
+            <h3>ABOUT THE INSTITUTE</h3>
+            <p>
+              Ambalika Institute of Management and Technology (AIMT) was established in 2008 as a private engineering and
+              management college in Mohanlalganj, Lucknow, Uttar Pradesh, India, and is affiliated with
+              Dr. A. P. J. Abdul Kalam Technical University (AKTU) and the Board of Technical Education (BTE), and
+              approved by the All India Council for Technical Education (AICTE).
+            </p>
+          </div>
+        </div>
+
+        <div class="split split--reverse reveal">
+          <div class="split__media">
+            <img src="assets/classrooms.jpg" alt="AIMT classrooms" loading="lazy" />
+          </div>
+          <div class="split__content">
+            <h3>CLASSROOMS</h3>
+            <p>
+              The teaching–learning pedagogy adopted in the classrooms is IT enabled, and almost all rooms are equipped
+              with LCD projectors, OHPs, and sound systems. The lecture halls can accommodate up to 80 students in a
+              single session, while tutorial rooms are designed for smaller groups of 20–30 students.
+            </p>
+          </div>
+        </div>
+
+        <div class="split reveal">
+          <div class="split__media">
+            <img src="assets/library.jpg" alt="AIMT central library" loading="lazy" />
+          </div>
+          <div class="split__content">
+            <h3>COLLEGE LIBRARY</h3>
+            <p>
+              The Central Library of Ambalika Institute is a centrally air conditioned, modern, digitized facility spread
+              over 500 sq. m. It is equipped with RFID-based library automation software and houses an international
+              collection of more than 37,030 books across 2,250 titles, providing students with rich scientific and
+              research resources.
+            </p>
+          </div>
+        </div>
+
+        <div class="split split--reverse reveal">
+          <div class="split__media">
+            <img src="assets/laboratories.jpg" alt="AIMT laboratories" loading="lazy" />
+          </div>
+          <div class="split__content">
+            <h3>LABORATORIES</h3>
+            <p>
+              Laboratories play a vital role in engineering colleges by providing students with practical exposure to
+              complement theoretical learning. They serve as controlled environments where students can experiment, test
+              theories, and analyze outcomes, fostering a deeper understanding of engineering concepts. Laboratories are
+              equipped with advanced tools and technologies tailored to specific engineering disciplines, such as
+              mechanical, civil, electrical, and computer science engineering, enabling hands-on training in areas like
+              prototype testing, circuit design, material analysis, and software simulations.
+            </p>
+            <p>
+              These facilities are crucial for skill development, allowing students to gain industry-specific expertise
+              and prepare for real-world applications through experimental studies and project-based learning. They also
+              encourage innovation by enabling students to work on individual or team projects using trial-and-error
+              methods to refine their designs. Furthermore, laboratories help students stay updated with modern
+              technological advancements, ensuring they are familiar with current industry standards. Overall,
+              laboratories are indispensable for nurturing the technical proficiency and confidence required for
+              successful engineering careers.
+            </p>
+          </div>
+        </div>
+
+        <div class="split reveal">
+          <div class="split__media">
+            <img src="assets/workshops.jpg" alt="AIMT workshops" loading="lazy" />
+          </div>
+          <div class="split__content">
+            <h3>WORKSHOPS</h3>
+            <p>
+              Workshops significantly enhance practical skills in engineering students by providing them with hands-on
+              experiences that complement theoretical learning. These interactive sessions allow students to apply
+              concepts learned in the classroom to real-world situations, thereby deepening their understanding of
+              engineering principles. By engaging in practical activities, students develop critical thinking and
+              problem-solving abilities, which are essential for success in the engineering field. Workshops also foster
+              the development of technical skills, such as using tools and equipment, conducting experiments, and
+              troubleshooting, which are crucial for their future careers. Furthermore, these experiences often involve
+              collaboration with peers and industry professionals, enhancing communication skills and preparing students
+              for teamwork in professional settings. Overall, workshops serve as a vital component of engineering
+              education, equipping students with the necessary skills to navigate the complexities of their future
+              careers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POLICIES -->
+    <section id="policies" class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Policies</h2>
+          <p class="section__subtitle">Add official policy items if you share the Policies page screenshots.</p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal"><h3 class="card__title">Anti-Ragging</h3><p class="card__text">Placeholder.</p></article>
+          <article class="card reveal"><h3 class="card__title">Grievances</h3><p class="card__text">Placeholder.</p></article>
+          <article class="card reveal"><h3 class="card__title">Code of Conduct</h3><p class="card__text">Placeholder.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET IN TOUCH -->
+    <section id="contact" class="section section--tint">
+      <div class="container">
+        <div class="section__head reveal section__head--center">
+          <h2 class="section__title">GET IN TOUCH</h2>
+        </div>
+
+        <div class="touch reveal">
+          <div class="touch__grid">
+            <article class="touch__card">
+              <h3 class="touch__title">COLLEGE CAMPUS</h3>
+              <p class="touch__text">
+                Ambalika Institute of Management &amp; Technology,<br />
+                Maurawan Road, Mohanlalganj,<br />
+                Lucknow, Uttar Pradesh<br /><br />
+                Pin Code : 226301<br />
+                Ph-No : <a href="tel:+917880499924">+91 78804 99924</a><br />
+                Email-Id : <a href="mailto:admission@ambalika.co.in">admission@ambalika.co.in</a>
+              </p>
+
+              <h3 class="touch__title">HEAD OFFICE</h3>
+              <p class="touch__text">
+                Ambalika building, Subhash Marg,<br />
+                (Near Sudarshan Cinema), Charbagh,<br />
+                Lucknow, Uttar Pradesh<br /><br />
+                Admissions Helpline: <a href="tel:+919651828006">+91 9651828006</a>, <a href="tel:+919651828007">9651828007</a><br />
+                Email-Id : <a href="mailto:admission@ambalika.co.in">admission@ambalika.co.in</a>
+              </p>
+            </article>
+
+            <article class="touch__card">
+              <h3 class="touch__title">BIHAR OFFICE:</h3>
+              <p class="touch__text">
+                Flat no. E11, 1st Floor, Krishna Apartment<br />
+                Boring road, Patna, Bihar (800013)<br />
+                Phone: <a href="tel:+919651828006">+91 9651828006</a>, <a href="tel:+919651828007">+91 9651828007</a><br />
+                E-mail: <a href="mailto:bihar@ambalika.co.in">bihar@ambalika.co.in</a>
+              </p>
+
+              <button class="btn btn--primary" id="registerNow" type="button">Register Now</button>
+            </article>
+
+            <form class="touch__card form" id="contactForm" novalidate>
+              <h3 class="touch__title">Send a Message</h3>
+
+              <label class="field">
+                <span class="field__label">Full Name</span>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name" required />
+                <span class="field__error" id="errName" aria-live="polite"></span>
+              </label>
+
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input class="input" type="email" id="email" name="email" placeholder="you@example.com" required />
+                <span class="field__error" id="errEmail" aria-live="polite"></span>
+              </label>
+
+              <label class="field">
+                <span class="field__label">Phone (optional)</span>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="+91…" />
+                <span class="field__error" id="errPhone" aria-live="polite"></span>
+              </label>
+
+              <label class="field">
+                <span class="field__label">Message</span>
+                <textarea class="input input--textarea" id="message" name="message" placeholder="How can we help you?" required></textarea>
+                <span class="field__error" id="errMessage" aria-live="polite"></span>
+              </label>
+
+              <button class="btn btn--primary btn--block" type="submit">Submit</button>
+              <p class="form__status" id="formStatus" aria-live="polite"></p>
+              <p class="fineprint">Demo form (no backend connected).</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer footer--dark" aria-label="Footer">
+    <div class="container footer__grid footer__grid--dark">
+      <nav class="footer__col" aria-label="About us links">
+        <h4>ABOUT US</h4>
+        <a href="#">Organization Chart</a>
+        <a href="#">Chancellor’s Profile</a>
+        <a href="#">Vice Chancellor’s Profile</a>
+        <a href="#">Chairman’s Profile</a>
+        <a href="#">Director General’s Profile</a>
+        <a href="#">Director Academics and Administration’s Profile</a>
+        <a href="#">Additional Director’s Profile</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Important links">
+        <h4>IMPORTANT LINKS</h4>
+        <a href="#">DRCC</a>
+        <a href="#">AKTU</a>
+        <a href="#">Emp Login</a>
+        <a href="#">Grievances</a>
+        <a href="#">Student &amp; Parent Login</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Infrastructure links">
+        <h4>INFRASTRUCTURE</h4>
+        <a href="#life">Central Library</a>
+        <a href="#life">Classrooms</a>
+        <a href="#life">Laboratories</a>
+        <a href="#life">Workshops</a>
+        <a href="#life">Seminar Hall</a>
+        <a href="#life">Conference Room</a>
+        <a href="#life">Cafeteria</a>
+        <a href="#life">Sports &amp; Cultural Facilities</a>
+        <a href="#life">Transportation</a>
+        <a href="#life">Hostel Accomodation</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>COLLEGE CAMPUS</h4>
+        <p>
+          Maurawan Road, Mohanlalganj,<br />
+          Lucknow, Uttar Pradesh- 226301
+        </p>
+        <p>
+          <a href="tel:+919651828006">+91 9651 828 006</a><br />
+          <a href="tel:+917880499924">+91 78804 99924</a>
+        </p>
+
+        <h4 class="footer__spacer">HEAD OFFICE</h4>
+        <p>
+          Ambalika building, Subhash Marg,<br />
+          (Near Sudarshan Cinema), Charbagh,<br />
+          Lucknow, Uttar Pradesh
+        </p>
+        <p><a href="tel:+919651828007">+91 9651 828 007</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom footer__bottom--dark">
+      <p>© 2025 AIMT.EDU.IN ALL RIGHTS RESERVED</p>
+      <div class="footer__social" aria-label="Social links">
+        <a href="#" aria-label="X">X</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Google">G</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="backtop" id="backTop" type="button" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="m6 11 6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+
+
+  <!-- Enquiry Modal -->
+  <div class="modal" id="enquiryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enquiry modal">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <div>
+          <div class="modal__title">Enquire Now</div>
+          <div class="modal__sub">Submit your details. We’ll contact you shortly. (Demo)</div>
+        </div>
+        <button class="icon-btn" id="closeEnquiryModal" type="button" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <form class="modal__body" id="enquiryForm" novalidate>
+        <label class="field">
+          <span class="field__label">Name</span>
+          <input class="input" id="eName" type="text" placeholder="Full name" required />
+          <span class="field__error" id="errEName" aria-live="polite"></span>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Phone</span>
+          <input class="input" id="ePhone" type="tel" placeholder="+91…" required />
+          <span class="field__error" id="errEPhone" aria-live="polite"></span>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Program Interested In</span>
+          <input class="input" id="eProgram" type="text" placeholder="e.g., B.Tech CSE" required />
+          <span class="field__error" id="errEProgram" aria-live="polite"></span>
+        </label>
+
+        <button class="btn btn--primary btn--block" type="submit">Submit</button>
+        <p class="form__status" id="enquiryStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
